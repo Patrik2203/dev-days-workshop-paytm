@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+/* The toggle adds a non-color-only, persistent high-contrast presentation. */
+html.high-contrast {
+    color-scheme: dark;
+}
+
+html.high-contrast body,
+html.high-contrast [class*="bg-slate-"],
+html.high-contrast [class*="bg-blue-"],
+html.high-contrast [class*="bg-purple-"] {
+    background-color: #000 !important;
+}
+
+html.high-contrast [class*="text-slate-"],
+html.high-contrast [class*="text-blue-"],
+html.high-contrast [class*="text-purple-"],
+html.high-contrast [class*="text-yellow-"] {
+    color: #fff !important;
+}
+
+html.high-contrast [class*="border-"] {
+    border-color: #fff !important;
+}
+
+html.high-contrast header {
+    background-image: none !important;
+    border-bottom: 2px solid #fff;
+}
+
+html.high-contrast a,
+html.high-contrast button {
+    text-decoration-thickness: 0.15em;
+}
