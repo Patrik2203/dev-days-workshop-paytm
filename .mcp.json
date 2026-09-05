@@ -5,9 +5,14 @@
       "url": "https://api.githubcopilot.com/mcp/"
     },
     "playwright": {
+      "type": "local",
       "command": "npx",
       "args": [
-        "@playwright/mcp@latest"
+        "@playwright/mcp@latest",
+        "--headless"
+      ],
+      "tools": [
+        "*"
       ]
     },
      "astro-docs": {
